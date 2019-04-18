@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+        "pages/weather/weather",
+        "pages/game/game",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -9,5 +10,27 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "backgroundColor": "#dfdfdf",
+    "list": [
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "首页",
+        "iconPath": "images/icon-first.png",
+        "selectedIconPath": "images/icon-first-select.png"
+      },
+      {
+        "pagePath": "pages/game/game",
+        "text": "游戏",
+        "iconPath": "images/icon-wechat.png",
+        "selectedIconPath": "images/icon-wechat-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
 }
