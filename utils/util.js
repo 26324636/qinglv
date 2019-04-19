@@ -54,7 +54,32 @@ function dateToString(now) {
     return dateTime;
 }  
 
+const calcTime = (time) => {
+  if (!time) {
+    return
+  }
+  const day = new Date(time)
+  const now = new Date()
+  const result = now.getTime() - day.getTime()
+  if (now.getFullYear() !== day.getFullYear()) {
+    return time.split(' ')[0]
+  }
+  //一分钟前评论
+  if (result < 60000) {
+    return '刚刚'
+  }
+  if (60000 <= result && result < 3600000) {
+    return `${Math.floor(result / 60000)}分钟前`
+  }
+  if (3600000 <= result && result < 86400000) {
+    return `${Math.floor(result / 3600000)}小时前`
+  }
+  if (86400000 <= result && result < 604800000) {
+    return `${Math.floor(result / 86400000)}天前`
+  }
+  return `${formatNumber(day.getMonth() + 1)}-${formatNumber(day.getDate())}`
 
+}
 //一定概率执行处理，N是概率，例如：七分之一，n就是7
 const randomJudgeDo = n => {
     var randomValue = Math.floor(Math.random() * n) + 1;
@@ -95,4 +120,5 @@ module.exports = {
   getDays: getDays,
   dateToString: dateToString,
   formatDate: formatDate,
+  calcTime,
 }

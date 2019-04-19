@@ -1,8 +1,10 @@
 {
   "pages": [
-        "pages/weather/weather",
-        "pages/game/game",
-    "pages/index/index"
+    "pages/weather/weather",
+    "pages/game/game",
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/movie/movie-detail/movie-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,6 +26,12 @@
         "text": "游戏",
         "iconPath": "images/icon-wechat.png",
         "selectedIconPath": "images/icon-wechat-select.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movieSelect.png"
       }
     ]
   },
