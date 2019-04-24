@@ -1,0 +1,15 @@
+<view class='start_box'>
+<view wx:if="{{canIUse}}" >
+    <view class='header'>
+        <image src='https://www.sxscott.com/crazyBirdimg/test/LOGO.png'></image>
+        <view>元培车辆管理系统</view>
+    </view>
+    <view class='content'>
+        <view>申请获取以下权限:</view>
+        <view class='content_info'>获得你的公开信息(昵称，头像等)</view>
+    </view>
+    
+    <button class='bottom' open-type="getUserInfo"bindgetuserinfo="bindGetUserInfo">微信授权登录</button>
+</view>
+<view wx:else>请升级微信版本</view>
+</view>

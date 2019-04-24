@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/start/start",
     "pages/weather/weather",
     "pages/game/game",
-    "pages/index/index",
     "pages/movie/movie",
     "pages/movie/movie-detail/movie-detail"
   ],
@@ -16,22 +17,16 @@
     "backgroundColor": "#dfdfdf",
     "list": [
       {
-        "pagePath": "pages/weather/weather",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/icon-first.png",
         "selectedIconPath": "images/icon-first-select.png"
       },
       {
-        "pagePath": "pages/game/game",
-        "text": "游戏",
-        "iconPath": "images/icon-wechat.png",
-        "selectedIconPath": "images/icon-wechat-select.png"
-      },
-      {
-        "pagePath": "pages/movie/movie",
-        "text": "电影",
-        "iconPath": "images/movie.png",
-        "selectedIconPath": "images/movieSelect.png"
+        "pagePath": "pages/start/start",
+        "text": "我的",
+        "iconPath": "images/icon-first.png",
+        "selectedIconPath": "images/icon-first-select.png"
       }
     ]
   },
