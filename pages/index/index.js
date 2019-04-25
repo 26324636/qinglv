@@ -15,15 +15,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // login.wxLogin(0, function (res) {
-    //   that.setData({
-    //     userInfo: res,
-    //   })
-    // });
-    // var userInfo = wx.getStorageSync('userinfo');
-    // this.setData({
-    //   userInfo: userInfo
-    // })
+    login.wxLogin(0, function (res) {
+      that.setData({
+        userInfo: res,
+      })
+    });
+    var userInfo = wx.getStorageSync('userinfo');
+    this.setData({
+      userInfo: userInfo
+    })
   },
   toYuanWang:function(){
     wx.navigateTo({

@@ -1,8 +1,8 @@
 <view class='index'>
   <view class='userInfo'>
-    <image class='userinfo-avatar' mode='aspectFill' src='https://wx.qlogo.cn/mmopen/vi_32/iaeKJiar9qzT6UktxG6mEFwolb95ypBQe0lcjgdsw6LrFtWqAFzmjS3th5gwS66FcoR6GzeqicAwNIk6SyGNVpMrw/132'></image>
+    <image class='userinfo-avatar' mode='aspectFill' src='{{userInfo.avatar}}'></image>
     <view class='userinfo'>
-      <view class='userinfo-name'>Effort</view>
+      <view class='userinfo-name'>{{userInfo.userName}}</view>
     </view>
   </view>
   <view class="container" wx:if="{{isbound != 1}}">

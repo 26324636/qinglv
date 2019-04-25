@@ -3,7 +3,7 @@
  */
 
 //正式
-var host = "https://www.sxscott.com/vehicle"
+var host = "https://www.sxscott.com/lovers"
 //本地
 //var host ="http://smartdove.iask.in:17946/api"
 // var host ="http://192.168.43.160:8080/vehicle"

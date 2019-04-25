@@ -23,7 +23,7 @@
         "selectedIconPath": "images/icon-first-select.png"
       },
       {
-        "pagePath": "pages/start/start",
+        "pagePath": "pages/movie/movie-detail/movie-detail",
         "text": "我的",
         "iconPath": "images/icon-first.png",
         "selectedIconPath": "images/icon-first-select.png"

@@ -2,7 +2,7 @@
 <view wx:if="{{canIUse}}" >
     <view class='header'>
         <image src='https://www.sxscott.com/crazyBirdimg/test/LOGO.png'></image>
-        <view>元培车辆管理系统</view>
+        <view>情侣空间</view>
     </view>
     <view class='content'>
         <view>申请获取以下权限:</view>
