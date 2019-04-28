@@ -1,0 +1,3 @@
+<view class='saveBtn'>发表</view>
+<textarea style='height:{{phoneHeight}}rpx' placeholder="请输入留言内容" auto-focus="true">
+</textarea>

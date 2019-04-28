@@ -1,0 +1,50 @@
+page{
+  background: #fef5f6;
+}
+.top{
+  width: 90%;
+  background: #fff;
+  color: #A7A7A7;
+  font-size: 28rpx;
+  padding: 25rpx 5%;
+  margin-bottom: 20rpx;
+}
+.list{
+  margin-left: 5%;
+  margin-bottom: 20rpx;
+  width: 90%;
+  padding: 25rpx 0;
+  background: #fff;
+  border-radius: 20rpx;
+
+}
+.list-top{
+  width: 90%;
+  display: flex;
+  margin-left: 5%;
+}
+.list-headpic image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.top-info{
+  height: 80rpx;
+  margin-left: 20rpx;
+}
+.list-name{
+  height: 50rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.list-time{
+  height: 30rpx;
+  font-size: 25rpx;
+  line-height: 30rpx;
+}
+.list-cont{
+  margin:20rpx 5%;
+  width: 90%;
+  text-align: center;
+  font-size: 30rpx;
+}

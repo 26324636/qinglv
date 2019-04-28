@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.eot?t=1556441781267'); /* IE9 */
+  src: url('iconfont.eot?t=1556441781267#iefix') format('embedded-opentype'),
+         /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMIAAsAAAAABsAAAAK5AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBTIFLATYCJAMICwYABCAFhG0HLxvwBcgOJUGXwIDtAQBABPX7oXv/vxCAzEQBWkIFpCJMZCYqKiWSFaoKyFbICsVC4v/6V38XcpbEQzLjzMlkja8WVm1WZPnr9Xkup3cNoEDmB8ppjmULA4x7PgD3wijhNkjoDWMXvMDzBEp1imOyVFHXBtYSe1ogLlQKAawLQUlimWKhsGFtOjC5w0JxdpM9Am6j78cvKWFNpiBn16ydl8tQ9DXNyTGb+z+nLyCIlrODbSLHOJCIrcbkCjPBGGZKk+Z6wbEqg69p6+uBWRzVINhfZ5eXg3YofCaRJ37UTAaP1dc0sD9pH2J68mjGnVdV+16FvWrbdy/rWZD36lXy27ed7oqPX9scovxx06mbsaeODZR9p/ZNRjJ+fFe7Dk0Unop9WZHadAqUV957jyxbfH4RPS2jl35fBicDq31LYHHLatfRM8ftTPwz32TdvfXkp9e/L7usHLrZFcnJsSHB5MDpzPVEf0lD+MzcqZcPV6JXNAl1P1LlG60ejVAE8H9fupgr/ulvbFw//zToNPXfuiyBL382XYnEw9yg+Myu4A/WpQ+A9IpL7GSW0NE7kJm+M3mpE+E/YG+t91O1DbebDcUaJriLdGTIFesnE30cBcpMoFCxWZQaU7m5TB3GTKQSjFoGCNXOIVPpE3LVHpOJ/g4FGv1DoeowQ6mdqNuzzGCobBcZFjiWkTiOVBLVE9fCbePKFqwY1gosL4mYHZgZVRGUnJBUzlRiPWZLLDCOKFI4J4gwqkMV4DKs1VJkYFSNJZ6g5NyQk5hImm6UIFEd2FrEYAIOkyGicYiKhNIjQWfOtvL5FpjCMC0B62ip83bAGCPV4EiyBEkDyEqlflDLo1xjNEIhBccRCMFQOkgFsGNaJ0khhuZRapiES6CcEDfIkYjakaHKhO3Vur/bBaVsXRbOkFzB5bBOoAAAAAA=') format('woff2'),
+         url('iconfont.woff?t=1556441781267') format('woff'),
+         url('iconfont.ttf?t=1556441781267') format('truetype'),
+         /* chrome,
+         firefox,
+         opera,
+         Safari,
+         Android,
+         iOS 4.2+ */ url('iconfont.svg?t=1556441781267#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yumao:before {
+  content: "\e634";
+}
+
+page {
+  background-image: linear-gradient(135deg, #fef5f6 1%, #fef5f6 100%);
+}
+
+.note image {
+  width: 100%;
+  height: 250rpx;
+}
+
+.noteList {
+  width: 90%;
+  margin-left: 5%;
+  padding: 25rpx 0;
+  color: #CD4C69;
+  border-bottom: 1rpx solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 30rpx;
+}
+
+.noteList-time {
+  margin-top: 15rpx;
+  font-size: 25rpx;
+}
+
+.toAdd {
+  position: fixed;
+  right: 50rpx;
+  border-radius: 50%;
+  bottom: 170rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: #ef696c;
+  text-align: center;
+}
+
+.icon-yumao {
+  color: white;
+  font-size: 45rpx;
+  line-height: 100rpx;
+}

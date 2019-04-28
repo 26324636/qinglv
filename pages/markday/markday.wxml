@@ -1,0 +1,27 @@
+<view class='markday'>
+  <view class='list'>
+    <view class='content'>
+      <view class='iconfont icon-aixin'></view>
+      <view class='list-text'>
+        <view class='list-text-title'>距离我们第一次爱爱已经</view>
+        <view class='list-text-time'>2019年1月18日</view>
+      </view>
+      <view class='num'>365</view>
+      <view class='day'>天</view>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='content'>
+      <view class='iconfont icon-dangao'></view>
+      <view class='title'>Effort的生日</view>
+      <view class='iconfont icon-jia'></view>
+    </view>
+  </view>
+  <view class='list' wx:for="{{list}}">
+    <view class='content'>
+      <view class='iconfont icon-aixin'></view>
+      <view class='title'>{{item.cont}}</view>
+      <view class='iconfont icon-jia'></view>
+    </view>
+  </view>
+</view>

@@ -5,7 +5,15 @@
     "pages/weather/weather",
     "pages/game/game",
     "pages/movie/movie",
-    "pages/movie/movie-detail/movie-detail"
+    "pages/movie/movie-detail/movie-detail",
+    "pages/wish/wish",
+    "pages/note/note",
+    "pages/note/noteAdd/noteAdd",
+    "pages/note/noteEdit/noteEdit",
+    "pages/leavemes/leavemes",
+    "pages/leavemes/leavemesAdd/leavemesAdd",
+    "pages/leavemes/leavemesDetail/leavemesDetail",
+    "pages/markday/markday"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,8 +31,20 @@
         "selectedIconPath": "images/icon-first-select.png"
       },
       {
-        "pagePath": "pages/movie/movie-detail/movie-detail",
-        "text": "我的",
+        "pagePath": "pages/note/note",
+        "text": "备忘录",
+        "iconPath": "images/icon-first.png",
+        "selectedIconPath": "images/icon-first-select.png"
+      },
+      {
+        "pagePath": "pages/leavemes/leavemes",
+        "text": "留言板",
+        "iconPath": "images/icon-first.png",
+        "selectedIconPath": "images/icon-first-select.png"
+      },
+      {
+        "pagePath": "pages/markday/markday",
+        "text": "纪念日",
         "iconPath": "images/icon-first.png",
         "selectedIconPath": "images/icon-first-select.png"
       }

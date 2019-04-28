@@ -1,0 +1,4 @@
+<view class='saveBtn'>保存</view>
+<textarea style='height:{{phoneHeight}}rpx' placeholder="请输入备忘内容"value="今天下午吃饭去今天下午吃饭去今天下午吃饭去今天下午吃饭去" >
+  
+</textarea>

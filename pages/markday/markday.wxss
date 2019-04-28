@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.eot?t=1556451701192'); /* IE9 */
+  src: url('iconfont.eot?t=1556451701192#iefix') format('embedded-opentype'),
+         /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAASYAAsAAAAACQgAAARKAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqFTIRXATYCJAMQCwoABCAFhG0HPhu/B8guBuy24pDa0sTJOKEh/81m8Pxzr943MicNGhNzotkeim3awjmhYJdXtKKlYAX7h//N9Rgm2MGVGY2TTSzWxtesjsuor6oREKd+JkUoQMGc53I+lqVrALWEFavCLoCA8u0/uJw2FpaF84By+dFYw/bgsgADSwMaa1OBTJASTAwbxi4vcj0ExNWYgaqAsDggxendBMiVZOJAKmHkFSwR1YQLxsZvUBsQFw0ftEsA8PS+L39gUwpUKELfaLn3zwFeL/DGHBaKhKTFgZDfcHaATQIDfQCHHAudB3AQ7oPF5WQxQ4CoYVcMVaX0xlwUYPFWlFH8lwdGCSRFVyYRdRAx/AELj1RKUI9ClTkUX4DSnTFRkAEvACQHurYyTEGcZsnKLm0kyyCC98sr4nfuDHfvjrdv97du3Ux556PxPe7cmRHwPtewoAUh3wvliygqX4uN85oAtccI55jd042z6rNXHXdf3hXe6qJj4y5o4IhBgkzc1pJm3Kzh7tNsuGcGaZhSmTqHnLlTn7pVNVwwyPwaTVGhVKFhTji/S3F2sXyhrGdArWtNd3i/eves9uiJREw/Fs1CQXy0Fryr3XnR3XnW3brX8w/f9iy++3Bp6IG2gjj28l51pa6wS+R1WOzfX/gwfAQaD4tFzCPw4XroS7NB+OrVaAgehMYHDGWDHALrF/1jo7R6g3ra6BhW57KVx8ZojDoaQ7n+PoHM7v4B84X7OlZjbV469xfM595re7XpJ2SYnrFigZMUiPuKgXX/rM2jn2/QLVBSP3BfO8BkR4ArnevvamsSoH1/QV1RMG1gaeGoAK0o9xv0YytWI93M1DboQJh3+Z+8mW4MenW+sd4jeSDci/U3eXZaAXzZn+29Ah1Is2ajVWiy4WSJU4/TmS7HHsd9PXY9kN5u2rbWciW7hQbiIMG7NLZBZfWd1mYPS6CPlsaN7bQyr6/oYxRapKb6Q+hL9fFYCq2kBEpBngAWAATsOOwlKhpzSbsB8H9IIkss8H9px7HUxTLl3b5Joc/L9/vxyffMos1U4KWLGov+Dn2aNpj3l0SWItFNHkvZuKBE2v11uLsqutlG4pHkn4hD3pMhtKUbbxfRhIiBiqiCiaoTndqHkIQBhEWNIK4ncHJCAQdM4hjQVQ1AZK2CSvsBk3WZ6NTHEFL2GcKyYYhbBcpzJjSTiC+HwHlEDpZdipF0qohhWniInxtDMPkFOCcu8TgJBIdL+jBrC6t0LJAoIjhDDOAKmDY8HgNjcKhCLABsRhQUUBiLQ+URdJ5FLo/HcrG0ZBRdyYJOFQLEDAcBx0PIgclWCkOioxRhOJV5kMznYxCY+ArgOBVFZeEEBA4usnaMNQtWDYiByqJGRZdyCZcAkw0eHgYMAwelECYA2AkFRpiCYRW3ykOg47GQ2yHI4sISlWM0VVpMry68w2puYgn9OA9UTFxC2JnEJXLwIiZOieNkCVkEAAAA') format('woff2'),
+         url('iconfont.woff?t=1556451701192') format('woff'),
+         url('iconfont.ttf?t=1556451701192') format('truetype'),
+         /* chrome,
+         firefox,
+         opera,
+         Safari,
+         Android,
+         iOS 4.2+ */ url('iconfont.svg?t=1556451701192#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jia:before {
+  content: "\e62d";
+}
+
+.icon-dangao:before {
+  content: "\e612";
+}
+
+.icon-aixin:before {
+  content: "\e600";
+}
+
+page {
+  background: linear-gradient(to bottom, #ff82ab, #ffb5c5);
+}
+
+.markday {
+  padding-bottom: 20rpx;
+}
+
+.list {
+  width: 90%;
+  margin-left: 5%;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  padding: 50rpx 0;
+}
+
+.content {
+  display: flex;
+  height: 50rpx;
+  position: relative;
+}
+
+.icon-dangao {
+  margin-left: 5%;
+  font-size: 38rpx;
+  line-height: 50rpx;
+  color: #ff82ab;
+}
+
+.icon-aixin {
+  margin-left: 5%;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  color: #ff82ab;
+}
+
+.title {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  line-height: 50rpx;
+}
+
+.icon-jia {
+  position: absolute;
+  right: 5%;
+  font-size: 50rpx;
+  color: #e27f94;
+  /* top: -10rpx; */
+}
+
+.list-text {
+  height: 60rpx;
+  margin-left: 20rpx;
+  margin-top: -5rpx;
+}
+
+.list-text-title {
+  height: 30rpx;
+  font-size: 30rpx;
+}
+
+.list-text-time {
+  height: 20px;
+  margin-top: 10rpx;
+  font-size: 20rpx;
+}
+
+.num {
+  position: absolute;
+  right: 10%;
+  color: #e27f94;
+    font-size: 50rpx;
+      margin-top: -5rpx;
+}
+
+.day {
+  position: absolute;
+  right: 5%;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}

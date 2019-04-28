@@ -40,12 +40,61 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
 					"name": "首页",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "愿望清单",
+					"pathName": "pages/wish/wish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "备忘录",
+					"pathName": "pages/note/note",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "备忘录添加",
+					"pathName": "pages/noteAdd/noteAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "备忘录添加",
+					"pathName": "pages/note/noteAdd/noteAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "留言",
+					"pathName": "pages/leavemes/leavemes",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "留言详情",
+					"pathName": "pages/leavemes/leavemesDetail/leavemesDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "纪念日",
+					"pathName": "pages/markday/markday",
 					"scene": null
 				}
 			]

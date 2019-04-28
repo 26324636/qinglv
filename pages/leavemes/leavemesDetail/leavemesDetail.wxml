@@ -1,0 +1,18 @@
+<view class='leavemes'>
+  <view class='list'>
+    <view class='list-top'>
+      <view class='list-headpic'>
+        <image src='https://wx.qlogo.cn/mmopen/vi_32/sh9EPvS6dHWkTxZ6sPRH55nIIUZdMU2Xz26OGrSAGrbmPuib765Y0DafRP9KicD1DSmFcB5tHAicfJYSC5g6yFdwQ/132'></image>
+      </view>
+      <view class='top-info'>
+        <view class='list-name'>Effort</view>
+        <view class='list-time'>2019-4-28</view>
+        <view class='delete'>删除</view>
+      </view>
+    </view>
+    <view class='list-cont'>
+     cao你千万遍
+    </view>
+  </view>
+
+</view>
