@@ -1,0 +1,18 @@
+<view class='detail'>
+    <view class='title'>距离我们第一次接吻已经</view>
+    <view class='dayNum'>
+      <view class='dayNum-num'>99</view>
+      <view class='dayNum-text'>Days</view>
+    </view>
+    <view class='dayTime'>起始日：2019年4月28日</view>
+    <view class='btn'>
+      <view class='edit'>
+        <view class='iconfont icon-bianji'></view>
+        <view class='edit-text'>编辑</view>
+      </view>
+      <view class='share'>
+        <view class='iconfont icon-fenxiang'></view>
+        <view class='fenxiang-text'>分享</view>
+      </view>
+    </view>
+</view>

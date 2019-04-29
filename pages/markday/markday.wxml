@@ -1,5 +1,5 @@
 <view class='markday'>
-  <view class='list'>
+  <view class='list' bindtap='toDetail'>
     <view class='content'>
       <view class='iconfont icon-aixin'></view>
       <view class='list-text'>
@@ -10,7 +10,7 @@
       <view class='day'>天</view>
     </view>
   </view>
-  <view class='list'>
+  <view class='list' bindtap='toAdd'>
     <view class='content'>
       <view class='iconfont icon-dangao'></view>
       <view class='title'>Effort的生日</view>

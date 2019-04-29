@@ -28,7 +28,7 @@ Page({
   },
   toYuanWang:function(){
     wx.navigateTo({
-      url: '',
+      url: '../wish/wish',
     })
   },
   toTianQi: function () {

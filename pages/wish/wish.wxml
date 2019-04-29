@@ -1,2 +1,9 @@
-<view>
+<view class='wish'>
+  <scroll-view scroll-y style="height: {{phoneHeight}}rpx;margin-top:180rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+    <view class='list'>
+      <view class='{{item.type == 0? "list-main":"list-main1"}}' wx:for="{{list}}" bindtap='{{item.type == 0? "toAdd":"toDetail"}}'>
+         每次小别之后都要结结实实的一个拥抱
+      </view>
+    </view>
+  </scroll-view>
 </view>

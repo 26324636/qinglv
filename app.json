@@ -7,13 +7,18 @@
     "pages/movie/movie",
     "pages/movie/movie-detail/movie-detail",
     "pages/wish/wish",
+    "pages/wish/wishAdd/wishAdd",
+    "pages/wish/wishDetail/wishDetail",
     "pages/note/note",
     "pages/note/noteAdd/noteAdd",
     "pages/note/noteEdit/noteEdit",
     "pages/leavemes/leavemes",
     "pages/leavemes/leavemesAdd/leavemesAdd",
     "pages/leavemes/leavemesDetail/leavemesDetail",
-    "pages/markday/markday"
+    "pages/markday/markday",
+    "pages/markday/markdayAdd/markdayAdd",
+    "pages/markday/markdayDetail/markdayDetail",
+    "pages/markday/markdayEdit/markdayEdit"
   ],
   "window": {
     "backgroundTextStyle": "light",

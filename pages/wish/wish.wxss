@@ -1,4 +1,41 @@
 page {
   background: url('http://www.zjw77.club/someimg/wishBac.png');
   background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+.scroll-view{
+  margin-top: 180rpx;
+}
+.list{
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* top: 150rpx;
+  bottom: 150rpx; */
+  /* margin-top: 180rpx;
+  margin-bottom: 180rpx; */
+}
+.list-main{
+  padding: 10rpx ;
+  width: 35%;
+  height: 80rpx;
+  font-size: 28rpx;
+  background: #fef5f6;
+  border:2rpx solid #ef696c;
+  color: #CD4C69;
+  margin-right: 2%;
+  margin-bottom: 20rpx;
+}
+.list-main1{
+  padding: 10rpx ;
+  width: 35%;
+  height: 80rpx;
+  font-size: 28rpx;
+  background: #E0EEE0;
+  border:2rpx solid #9ACD32;
+  color: #9BCD9B;
+  margin-right: 2%;
+  margin-bottom: 20rpx;
 }

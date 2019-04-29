@@ -11,12 +11,12 @@ Page({
   },
   toAdd: function () {
     wx.navigateTo({
-      url: 'leavemesAdd/leavemesAdd',
+      url: 'markdayAdd/markdayAdd',
     })
   },
   toDetail: function () {
     wx.navigateTo({
-      url: 'leavemesDetail/leavemesDetail',
+      url: 'markdayDetail/markdayDetail',
     })
   },
   onReady: function () {

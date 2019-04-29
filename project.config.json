@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -95,6 +95,35 @@
 					"id": -1,
 					"name": "纪念日",
 					"pathName": "pages/markday/markday",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "添加纪念日",
+					"pathName": "pages/markday/markdayAdd/markdayAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情纪念日",
+					"pathName": "pages/markday/markdayDetail/markdayDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加愿望清单",
+					"pathName": "pages/wish/wishAdd/wishAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "愿望清单详情",
+					"pathName": "pages/wish/wishDetail/wishDetail",
+					"query": "",
 					"scene": null
 				}
 			]

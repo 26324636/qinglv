@@ -1,0 +1,31 @@
+<view id='secPublish'>
+  <view class='tishi'>
+    <view class='tishi-text'> 记录你们的美好时刻吧~</view>
+  </view>
+  <view class='addPic'>
+    <view class='addPicNoPic' bindtap='addPic' wx:if="{{imgUrls.length == 0}}">
+      <view class='iconfont icon-tianjiazhaopian'></view>
+      <view class='addPicNoPic-text'>添加图片</view>
+    </view>
+    <view class='addPicHasPic' wx:if="{{imgUrls.length > 0}}">
+      <view class='addPicHasPic-btn' bindtap='addPic'>
+        <view class='iconfont icon-tianjiazhaopian'></view>
+        <view class='addPicNoPic-text'>添加图片</view>
+      </view>
+      <view class='imgList' wx:for="{{imgUrls}}" wx:key="key"> 
+        <image class='publishImg' src='{{item}}' mode='aspectFill'></image>
+        <view class='imgDel' data-index='{{index}}' catchtap='removePic'>x</view>
+      </view>
+    </view>
+  </view>
+  <view class='addContent'>
+    <textarea class='content-content' placeholder-class='input_content' placeholder='请描述你们的美好时刻~' bindinput='input_content'></textarea>
+  </view>
+  <view class='barBottom' bindtap='{{canPublish == 1 ? "publishBtn" :""}}'>发布
+  </view>
+</view>
+<view>
+    <loading hidden="{{lodingHidden}}">
+        加载中..
+    </loading>
+</view>
