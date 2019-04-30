@@ -4,19 +4,18 @@ page {
 textarea{
   width: 90%;
   margin-left: 5%;
-  padding-top: 100rpx;
+  padding-top: 50rpx;
   color: #CD4C69;
+  /* border-top: 1rpx solid #ddd; */
 }
 .saveBtn{
-  position: absolute;
-  top: 20rpx;
-  height: 60rpx;
-  width: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  height: 100rpx;
+  width: 100%;
   background: #ef696c;
   color: #fff;
   font-size: 30rpx;
-  right: 5%;
-  line-height: 60rpx;
+  line-height: 100rpx;
   text-align: center;
-  border-radius: 10rpx;
 }

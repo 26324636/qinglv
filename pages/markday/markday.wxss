@@ -35,6 +35,8 @@
 
 page {
   background: linear-gradient(to bottom, #ff82ab, #ffb5c5);
+    background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
 .markday {

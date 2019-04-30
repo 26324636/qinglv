@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 11,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -64,9 +64,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "备忘录添加",
-					"pathName": "pages/noteAdd/noteAdd",
+					"id": 3,
+					"name": "备忘录编辑",
+					"pathName": "pages/note/noteEdit/noteEdit",
 					"query": "",
 					"scene": null
 				},

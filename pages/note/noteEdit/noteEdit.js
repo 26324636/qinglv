@@ -12,7 +12,7 @@ Page({
   },
   getPhoneInfo: function () {
     this.setData({
-      phoneHeight: 750 / wx.getSystemInfoSync().windowWidth * wx.getSystemInfoSync().windowHeight
+      phoneHeight: 750 / wx.getSystemInfoSync().windowWidth * wx.getSystemInfoSync().windowHeight -100
     })
   },
   onReady: function () {

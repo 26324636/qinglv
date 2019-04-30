@@ -1,15 +1,28 @@
 <view class='index'>
-  <view class='userInfo'>
+  <view class='userInfo'  wx:if="{{userInfo.isbound == 0}}">
     <image class='userinfo-avatar' mode='aspectFill' src='{{userInfo.avatar}}'></image>
     <view class='userinfo'>
       <view class='userinfo-name'>{{userInfo.userName}}</view>
+      <view class='userinfo-id'>ID:{{userInfo.spouseId}}</view>
     </view>
   </view>
-  <view class="container" wx:if="{{isbound != 1}}">
+  <view class='userInfoBind'  wx:if="{{userInfo.isbound == 1}}">
+    <image class='userinfo-avatar1' mode='aspectFill' src='{{userInfo1.headimagurl}}'></image>
+    <image class='userinfo-avatar2' mode='aspectFill' src='{{userInfo2.headimagurl}}'></image>
+    <view class='userinfo1'>
+      <view class='userinfo-name1'>{{userInfo1.nickName}}</view>
+      <view class='userinfo-num1'>想他{{num1}}天</view>
+    </view>
+    <view class='userinfo2'>
+      <view class='userinfo-name2'>{{userInfo2.nickName}}</view>
+      <view class='userinfo-num2'>想我{{num2}}天</view>
+    </view>
+  </view>
+  <view class="container" wx:if="{{userInfo.isbound == 0}}" bindtap='bind'>
     <view class="dot">绑定</view>
     <view class="pulse"></view>
   </view>
-  <view class='qiandao'>
+  <view class='qiandao' wx:if="{{userInfo.isbound == 1 && hiddenSign == false }}" bindtap='qiandao'>
     <view class="dot">签到</view>
     <view class="pulse"></view>
   </view>
@@ -31,4 +44,7 @@
       <view class='youxi-text'>游戏娱乐</view>
     </view>
   </view>
+  <modal hidden="{{hiddenBindid}}" title="绑定情侣" confirm-text="绑定" cancel-text="取消" bindcancel="cancelBindid" bindconfirm="confirmBindid">
+    <input type='text' class='input-bindid' bindinput='input_bindid' value='{{input_bindid}}' placeholder="请输入对方ID" />
+  </modal>
 </view>
