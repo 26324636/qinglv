@@ -27,31 +27,32 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor": "#dfdfdf",
+    "backgroundColor": "#fff",
+    "selectedColor": "#FF534C",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/icon-first.png",
-        "selectedIconPath": "images/icon-first-select.png"
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-select.png"
       },
       {
         "pagePath": "pages/note/note",
         "text": "备忘录",
-        "iconPath": "images/icon-first.png",
-        "selectedIconPath": "images/icon-first-select.png"
+        "iconPath": "images/note.png",
+        "selectedIconPath": "images/note-select.png"
       },
       {
         "pagePath": "pages/leavemes/leavemes",
         "text": "留言板",
-        "iconPath": "images/icon-first.png",
-        "selectedIconPath": "images/icon-first-select.png"
+        "iconPath": "images/leavemes.png",
+        "selectedIconPath": "images/leavemes-select.png"
       },
       {
         "pagePath": "pages/markday/markday",
         "text": "纪念日",
-        "iconPath": "images/icon-first.png",
-        "selectedIconPath": "images/icon-first-select.png"
+        "iconPath": "images/markday.png",
+        "selectedIconPath": "images/markday-select.png"
       }
     ]
   },
