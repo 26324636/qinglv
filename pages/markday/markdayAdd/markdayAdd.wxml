@@ -1,17 +1,19 @@
 <view>
   <view class='title'>
     <view class='iconfont icon-aixin'></view>
-    <view class='title-text'>第一次爱爱的日子</view>
+    <view class='title-text'>
+      <input placeholder='请输入纪念日名字' bindinput='title_input'></input>
+    </view>
   </view>
   <view class='time'>
     <view class='iconfont icon-shijian'></view>
     <view class="section">
-      <picker mode="date" value="{{date}}" start="2015-09-01" end="2010-09-01" bindchange="bindDateChange">
+      <picker mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
         <view class="picker">
           {{date}}
         </view>
       </picker>
     </view>
   </view>
-  <view class='save'>保存</view>
+  <view class='save' bindtap='add'>添加</view>
 </view>

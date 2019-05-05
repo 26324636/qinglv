@@ -19,4 +19,5 @@ textarea{
   line-height: 60rpx;
   text-align: center;
   border-radius: 10rpx;
+  z-index: 99999;
 }

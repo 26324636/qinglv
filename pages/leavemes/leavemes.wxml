@@ -1,17 +1,17 @@
 <view class='leavemes'>
   <view class='top' bindtap='toAdd'>留个言吧...</view>
-  <view class='list' wx:for="{{list}}" bindtap='toDetail'>
+  <view class='list' wx:for="{{list}}">
     <view class='list-top'>
-      <view class='list-headpic'>
+      <!-- <view class='list-headpic'>
         <image src='https://wx.qlogo.cn/mmopen/vi_32/sh9EPvS6dHWkTxZ6sPRH55nIIUZdMU2Xz26OGrSAGrbmPuib765Y0DafRP9KicD1DSmFcB5tHAicfJYSC5g6yFdwQ/132'></image>
-      </view>
+      </view> -->
       <view class='top-info'>
-        <view class='list-name'>Effort</view>
-        <view class='list-time'>2019-4-28</view>
+        <view class='list-name'>{{item.nickName}}</view>
+        <view class='list-time'>{{item.gmtCreated}}</view>
       </view>
     </view>
     <view class='list-cont'>
-      {{item.cont}}
+      {{item.content}}
     </view>
   </view>
 
