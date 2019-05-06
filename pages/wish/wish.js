@@ -10,13 +10,14 @@ Page({
     input_add:'' //添加的清单
   },
   onLoad: function (options) {
+   
+    this.getPhoneInfo();
+  },
+  onShow: function (options) {
     var userInfo = wx.getStorageSync('userinfo');
     this.setData({
       userInfo: userInfo
     })
-    this.getPhoneInfo();
-  },
-  onShow: function (options) {
     this.getWishList();
   },
   //获取手机的高度

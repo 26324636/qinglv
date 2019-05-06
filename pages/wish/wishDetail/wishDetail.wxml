@@ -1,17 +1,17 @@
 <view id='secondHandDetail'>
   <view class='detail-head'>
-    <image class='detail-head-img' mode='aspectFill' src='https://wx.qlogo.cn/mmopen/vi_32/sh9EPvS6dHWkTxZ6sPRH55nIIUZdMU2Xz26OGrSAGrbmPuib765Y0DafRP9KicD1DSmFcB5tHAicfJYSC5g6yFdwQ/132'></image>
+    <image class='detail-head-img' mode='aspectFill' src='{{userInfo.avatar}}'></image>
     <view class='detail-head-mes'>
-      <view class='detail-head-nickname'>Effort</view>
-      <view class='detail-head-pos'>2019-4-29</view>
+      <view class='detail-head-nickname'>{{userInfo.userName}}</view>
+      <view class='detail-head-pos'>{{detail.gmtModified}}</view>
     </view>
     <view class='delete' bindtap='delete'>删除</view>
   </view>
   <view class='goodsContent'>
-    <text>{{goodsDetail.goodsContent}}</text>
+    <text>{{detail.content}}</text>
   </view>
   <view class='goodsImg'>
-    <image wx:for="{{goodsDetail.goodsImg}}"  class='goodsImg-img' src='{{item}}' data-img='{{item}}' catchtap='imgYu' mode='aspectFill' wx:key="key"></image>
+    <image wx:for="{{detail.url}}"  class='goodsImg-img' src='{{item}}' data-img='{{item}}' catchtap='imgYu' mode='aspectFill' wx:key="key"></image>
   </view>
  
  

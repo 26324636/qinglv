@@ -7,15 +7,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id: null, //商品的id，
-    userId: null, //用户的id
-    avatar: null, //用户的头像
-    goodsDetail: ''
+    id: null, 
+    userInfo: null,
+    detail: ''
 
   },
   onLoad: function (options) {
-    // var id = options.id;
-    var id = 7;
+    var id = options.id;
+    // var id = 7;
     this.setData({
       id: id,
     })
@@ -44,6 +43,11 @@ Page({
     let infoCb = {}
     infoCb.success = function (res) {
       console.log(res);
+      var detail = res;
+      detail['url'] = JSON.parse(detail.url);
+      that.setData({
+        detail:detail
+      })
     }
     infoCb.beforeSend = () => {
       // wx.showLoading({
@@ -52,7 +56,35 @@ Page({
     }
     sendAjax(infoOpt, infoCb, () => { });
   },
-  
+  delete: function () {
+    var id = this.data.id;
+    wx.showModal({
+      title: '确认删除？',
+      showCancel: true,
+      success(res) {
+        if (res.confirm) {
+          let infoOpt = {
+            url: '/lovers/wish?id=' + id,
+            type: 'DELETE',
+            data: {
+            },
+            header: {
+              'content-type': 'application/json',
+            },
+          }
+          let infoCb = {}
+          infoCb.success = function (res) {
+            console.log(res);
+          }
+          infoCb.beforeSend = () => { }
+          sendAjax(infoOpt, infoCb, () => { });
+          wx.navigateBack({
+          })
+        }
+      }
+    })
+
+  },
   onReady: function () {
 
   },
