@@ -3,11 +3,11 @@ const sendAjax = require('../../../utils/sendAjax.js')
 var app = getApp();
 Page({
   data: {
+    id:'',
     userInfo: null,
     userId: null,
     imgUrls: [],
     arr_img: null,
-    title: '',
     content: '',
     lodingHidden: true,
     canPublish: 1,
@@ -15,9 +15,11 @@ Page({
   onLoad: function (options) {
     var userInfo = wx.getStorageSync('userinfo');
     var userId = wx.getStorageSync('userinfo').userId;
+    var id = options.id;
     this.setData({
       userInfo: userInfo,
-      userId: userId
+      userId: userId,
+      id:id
     })
   },
   //添加图片
@@ -58,7 +60,7 @@ Page({
       url: 'https://www.sxscott.com/crazyBird/upload/avatar',//这里是你图片上传的接口
       path: pics,//这里是选取的图片的地址数组
       formData: {
-        picType: 'secondHand'
+        picType: 'wish'
       }
     });
   },
@@ -71,7 +73,7 @@ Page({
     wx.uploadFile({
       header: {
         'content-type': 'application/json',
-        'authorization': wx.getStorageSync('userinfo').authorization
+        'authorization': "KfvmkLWZVnVRKhw1H2AWxMNNbyy3BjGDt9ALjdto0sFekuR/7qCECmfjLtBKoZaT"
       },
       url: data.url,
       filePath: data.path[i],
@@ -106,33 +108,20 @@ Page({
     });
   },
   publish: function () {
+    var id = this.data.id;
     var userId = this.data.userId;
     var imgUrls = JSON.stringify(this.data.arr_img);
-    var title = this.data.title;
     var content = this.data.content;
-    var address = this.data.address;
-    var typeId = this.data.typeId;
-    var price = this.data.price;
-    var oldPrice = this.data.oldPrice;
-    var phone = this.data.phone;
-    var traydingWayId = this.data.traydingWayId;
     var that = this;
-    console.log(111)
     let infoOpt = {
-      url: '/secondary/create',
-      type: 'POST',
+      url: '/lovers/wish',
+      type: 'PUT',
       data: {
+        id:id,
         userId: userId,
-        goodsTitle: title,
-        goodsContent: content,
-        goodsImag: imgUrls,
-        postion: address,
-        goodsType: typeId,
-        goodsWay: 2,
-        tradingWay: traydingWayId,
-        price: price,
-        oldPrice: oldPrice,
-        telephone: phone
+        content: content,
+        url: imgUrls,
+        state:1
       },
       header: {
         'content-type': 'application/json',
@@ -141,18 +130,15 @@ Page({
     let infoCb = {}
     infoCb.success = function (res) {
       console.log(res);
-      if (res.message == '发布成功') {
+      if(res.code == '200'){
         wx.showModal({
           title: '提示',
-          content: '发布成功，请耐心等待审核',
+          content: '记录成功',
           showCancel: false,
           success(res) {
             if (res.confirm) {
               wx.hideLoading();
-              that.setData({
-                canPublish: 1
-              })
-              wx.navigateBack();
+              wx.navigateBack({})
             }
           }
         })
@@ -170,37 +156,13 @@ Page({
     var userInfo = this.data.userInfo;
     var userId = this.data.userId;
     var imgUrls = this.data.imgUrls;
-    var title = this.data.title;
     var content = this.data.content;
-    var address = this.data.address;
-    var typeId = this.data.typeId;
-    var price = this.data.price;
-    var oldPrice = this.data.oldPrice;
-    var phone = this.data.phone;
-    var traydingWayId = this.data.traydingWayId;
     that.setData({
       canPublish: 2
     })
-    if (userInfo.isbound != 1) {
-      wx.showModal({
-        title: '提示',
-        content: '请先绑定学号',
-        showCancel: false
-      })
-      that.setData({
-        canPublish: 1
-      })
-    } else if (imgUrls.length == 0) {
+    if (imgUrls.length == 0) {
       wx.showToast({
         title: '请先添加图片',
-        icon: 'none'
-      })
-      that.setData({
-        canPublish: 1
-      })
-    } else if (title == '') {
-      wx.showToast({
-        title: '请输入标题',
         icon: 'none'
       })
       that.setData({
@@ -209,30 +171,6 @@ Page({
     } else if (content == '') {
       wx.showToast({
         title: '请输入内容',
-        icon: 'none'
-      })
-      that.setData({
-        canPublish: 1
-      })
-    } else if (address == null || address == '') {
-      wx.showToast({
-        title: '请先添加地址',
-        icon: 'none'
-      })
-      that.setData({
-        canPublish: 1
-      })
-    } else if (price == null || oldPrice == null || parseFloat(price) > parseFloat(oldPrice)) {
-      wx.showToast({
-        title: '请输入正确的价格',
-        icon: 'none'
-      })
-      that.setData({
-        canPublish: 1
-      })
-    } else if (phone == null || phone == '') {
-      wx.showToast({
-        title: '请输入正确的手机号',
         icon: 'none'
       })
       that.setData({

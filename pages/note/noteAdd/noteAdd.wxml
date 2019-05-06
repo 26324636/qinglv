@@ -1,3 +1,26 @@
-<view class='saveBtn'>保存</view>
-<textarea style='height:{{phoneHeight}}rpx' placeholder="请输入备忘内容" auto-focus="true"  bindinput='input_content'>
+<!-- <view class='saveBtn'>保存</view> -->
+<view class='addDetail'>
+  <view class='day'>
+    <view class='day-title'>提醒日期</view>
+    <picker class='day-text' mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    <view class='day-arrow'>></view>
+  </view>
+  <view class='time'>
+    <view class='time-title'>提醒时间</view>
+    <picker class='time-text' mode="time" value="{{time}}" start="" end="" bindchange="bindTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    <view class='time-arrow'>></view>
+  </view>
+
+</view>
+<textarea style='height:{{phoneHeight}}rpx' placeholder="请输入备忘内容"  bindinput='input_content'>
 </textarea>
+
+  <view  class='saveBtn' bindtap='save'>添加</view>

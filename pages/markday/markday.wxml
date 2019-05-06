@@ -1,5 +1,5 @@
 <view class='markday'>
-  <view class='list' bindtap='toDetail' wx:for="{{list}}">
+  <view class='list' bindtap='toDetail' wx:for="{{list}}" data-mes='{{item}}' >
     <view class='content'>
       <view class='iconfont icon-aixin'></view>
       <view class='list-text'>

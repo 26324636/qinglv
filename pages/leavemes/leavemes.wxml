@@ -1,5 +1,6 @@
 <view class='leavemes'>
   <view class='top' bindtap='toAdd'>留个言吧...</view>
+  <view class='main'>
   <view class='list' wx:for="{{list}}">
     <view class='list-top'>
       <!-- <view class='list-headpic'>
@@ -14,5 +15,7 @@
       {{item.content}}
     </view>
   </view>
+  </view>
+  
 
 </view>

@@ -11,9 +11,10 @@ Page({
     this.setData({
       userInfo:userInfo
     })
-    this.getNote();
+
   },
   onShow: function (options) {
+    this.getNote();
   },
   getNote:function(){
     var that = this;
@@ -31,6 +32,9 @@ Page({
     let infoCb = {}
     infoCb.success = function (res) {
       console.log(res);
+      that.setData({
+        noteList:res.items
+      })
     }
     infoCb.beforeSend = () => { }
     sendAjax(infoOpt, infoCb, () => { });
@@ -40,9 +44,13 @@ Page({
       url: 'noteAdd/noteAdd',
     })
   },
-  toDetail:function(){
+  toDetail:function(e){
+    console.log(e)
+    var content = e.currentTarget.dataset.content;
+    var remindTime = e.currentTarget.dataset.remindtime;
+    var id = e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: 'noteEdit/noteEdit',
+      url: 'noteEdit/noteEdit?content=' + content + '&remindTime=' + remindTime + '&id=' +id,
     })
   },
  

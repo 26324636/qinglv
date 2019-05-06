@@ -1,10 +1,11 @@
 <view class='note'>
   <image src='http://www.zjw77.club/someimg/notetop.jpg'></image>
-  <view class='noteList' wx:for="{{noteList}}" bindtap='toDetail'>
-    <view class='noteList-content'>今天下午吃饭去今天下午吃饭去今天下午吃饭去今天下午吃饭去</view>
-    <view class='noteList-time'>2019.04.28 16:00</view>
+  <view class='noteList' wx:for="{{noteList}}" bindtap='toDetail' data-content='{{item.contetn}}' data-remindtime='{{item.remindTime}}' data-id='{{item.id}}' wx:key="key">
+    <view class='noteList-content'>{{item.contetn}}</view>
+    <view class='noteList-time'>{{item.gmtModified}}</view>
   </view>
   <view class='toAdd' catchtap='toAdd'>
     <view class='iconfont icon-yumao'></view>
   </view>
+
 </view>

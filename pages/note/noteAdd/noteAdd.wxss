@@ -3,20 +3,78 @@ page {
 }
 textarea{
   width: 90%;
-  margin-left: 5%;
-  padding-top: 100rpx;
+  padding: 20rpx 5%;
+  padding-top: 20rpx;
   color: #CD4C69;
+  background: #fef5f6;
+  font-size: 30rpx;
+  height: 600rpx;
+}
+
+.addDetail {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.day {
+  height: 80rpx;
+  font-size: 30rpx;
+  position: relative;
+  line-height: 80rpx;
+}
+
+.day-title {
+  margin-left: 5%;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.day-text {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  color: #aaaeb9;
+}
+
+.day-arrow {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  color: #aaaeb9;
+}
+
+.time {
+  height: 80rpx;
+  font-size: 30rpx;
+  position: relative;
+  line-height: 80rpx;
+}
+
+.time-title {
+  margin-left: 5%;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.time-text {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  color: #aaaeb9;
+}
+
+.time-arrow {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  color: #aaaeb9;
 }
 .saveBtn{
-  position: absolute;
-  top: 20rpx;
-  height: 60rpx;
-  width: 120rpx;
+  position: fixed;
+  bottom: 0;
+  height: 80rpx;
+  width: 100%;
   background: #ef696c;
   color: #fff;
   font-size: 30rpx;
-  right: 5%;
-  line-height: 60rpx;
+  line-height: 80rpx;
   text-align: center;
-  border-radius: 10rpx;
 }

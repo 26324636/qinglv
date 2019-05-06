@@ -1,5 +1,5 @@
 page{
-  background: #fef5f6;
+  background: #ffb5c5;
 }
 .top{
   width: 90%;
@@ -8,6 +8,13 @@ page{
   font-size: 28rpx;
   padding: 25rpx 5%;
   margin-bottom: 20rpx;
+  position: fixed;
+  /* height: 50rpx; */
+  top: 0;
+  z-index: 999;
+}
+.main{
+  margin-top: 100rpx;
 }
 .list{
   margin-left: 5%;

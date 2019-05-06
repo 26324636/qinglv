@@ -94,7 +94,7 @@ page {
 }
 
 .share {
-  width: 50%;
+  width: 100%;
   display: flex;
   color: #fff;
   justify-content: center;
@@ -111,3 +111,8 @@ page {
     margin-left: 10rpx;
       line-height: 50rpx;
 }
+.bottomBar-share {
+  width: 25%;
+  margin-left: 5%;
+}
+button::after{ border: none; } 

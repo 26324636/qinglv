@@ -1,17 +1,17 @@
 <view>
   <view class='title'>
     <view class='iconfont icon-aixin'></view>
-    <view class='title-text'>第一次爱爱的日子</view>
+    <view class='title-text'>{{detail.content}}</view>
   </view>
   <view class='time'>
     <view class='iconfont icon-shijian'></view>
     <view class="section">
-      <picker mode="date" value="{{date}}" start="2015-09-01" end="2010-09-01" bindchange="bindDateChange">
+      <picker mode="date" value="{{detail.markDate}}" start="" end="" bindchange="bindDateChange">
         <view class="picker">
-          {{date}}
+          {{detail.markDate}}
         </view>
       </picker>
     </view>
   </view>
-  <view class='save'>保存</view>
+  <view class='save' bindtap='save'>保存</view>
 </view>

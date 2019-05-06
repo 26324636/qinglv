@@ -6,18 +6,16 @@ Page({
     userInfo: null, //用户信息
     list: []
   },
-  onLoad: function (options) {
+  onLoad: function(options) {
     var userInfo = wx.getStorageSync('userinfo');
     this.setData({
       userInfo: userInfo
     })
-
-
   },
-  onShow: function (options) {
+  onShow: function(options) {
     this.getMarkDay();
   },
-  getMarkDay: function () {
+  getMarkDay: function() {
     var that = this;
     var loversId = this.data.userInfo.loversId;
     let infoOpt = {
@@ -31,36 +29,45 @@ Page({
       },
     }
     let infoCb = {}
-    infoCb.success = function (res) {
+    infoCb.success = function(res) {
       console.log(res);
+      var list = res.items;
+      for (var i = 0; i < list.length; i++) {
+        list[i].markDate = list[i].markDate.substring(0, 10)
+      }
       that.setData({
-        list: res.items
+        list: list
       })
     }
-    infoCb.beforeSend = () => { }
-    sendAjax(infoOpt, infoCb, () => { });
+    infoCb.beforeSend = () => {}
+    sendAjax(infoOpt, infoCb, () => {});
   },
-  toAdd: function () {
-    wx.navigateTo({
-      url: 'markdayAdd/markdayAdd',
-    })
+  toAdd: function() {
+    var isbound = wx.getStorageSync('userinfo').isbound;
+    if (isbound == 1) {
+      wx.navigateTo({
+        url: 'markdayAdd/markdayAdd',
+      })
+    } else {
+      wx.showToast({
+        title: '请先绑定情侣再进行操作',
+        icon: 'none'
+      })
+    }
   },
-  toDetail: function () {
-    wx.navigateTo({
-      url: 'markdayDetail/markdayDetail',
-    })
-  },
-  onReady: function () {
-  },
+  toDetail: function(e) {
 
-  onHide: function () {
+    var mes = e.currentTarget.dataset.mes;
+    console.log(mes)
+    wx.navigateTo({
+      url: 'markdayDetail/markdayDetail?mes=' + JSON.stringify(mes),
+    })
   },
-  onUnload: function () {
-  },
-  onPullDownRefresh: function () {
-  },
-  onReachBottom: function () {
-  },
-  onShareAppMessage: function () {
-  }
+  onReady: function() {},
+
+  onHide: function() {},
+  onUnload: function() {},
+  onPullDownRefresh: function() {},
+  onReachBottom: function() {},
+  onShareAppMessage: function() {}
 })

@@ -40,9 +40,18 @@ Page({
     sendAjax(infoOpt, infoCb, () => { });
   },
   toAdd:function(){
-    wx.navigateTo({
-      url: 'leavemesAdd/leavemesAdd',
-    })
+    var isbound = wx.getStorageSync('userinfo').isbound;
+    if(isbound == 1){
+      wx.navigateTo({
+        url: 'leavemesAdd/leavemesAdd',
+      })
+    }else{
+      wx.showToast({
+        title: '请先绑定情侣再进行操作',
+        icon:'none'
+      })
+    }
+
   },
   // toDetail:function(){
   //   wx.navigateTo({
