@@ -3,14 +3,14 @@ const sendAjax = require('../../../utils/sendAjax.js')
 var app = getApp();
 Page({
   data: {
-    id:'',
-    userInfo: null,
-    userId: null,
-    imgUrls: [],
-    arr_img: null,
-    content: '',
-    lodingHidden: true,
-    canPublish: 1,
+    id:'', //愿望清单的id
+    userInfo: null,  //用户的信息
+    userId: null, //用户的id
+    imgUrls: [], //愿望清单的图片
+    arr_img: null, //愿望清单的上传时候的图片路径
+    content: '', //愿望清单的内容
+    lodingHidden: true, //是否隐藏
+    canPublish: 1, //是否可以保存
   },
   onLoad: function (options) {
     var userInfo = wx.getStorageSync('userinfo');
@@ -53,6 +53,7 @@ Page({
     }
 
   },
+  //图片触发的方法
   uploadimg: function () {//这里触发图片上传的方法
     var pics = this.data.imgUrls;
     var that = this;
@@ -64,6 +65,7 @@ Page({
       }
     });
   },
+  //上传图片
   uploadimgs: function (data) {
     var that = this;
     var i = data.i ? data.i : 0; //当前上传的哪张图片
@@ -107,6 +109,7 @@ Page({
       }
     });
   },
+  //发布保存
   publish: function () {
     var id = this.data.id;
     var userId = this.data.userId;
@@ -151,6 +154,7 @@ Page({
     }
     sendAjax(infoOpt, infoCb, () => { });
   },
+  //判断所有条件是否完成
   publishBtn: function () {
     var that = this;
     var userInfo = this.data.userInfo;
@@ -198,6 +202,35 @@ Page({
     this.setData({
       content: content
     })
+  },
+  delete: function () {
+    var id =  this.data.id;
+    wx.showModal({
+      title: '确认删除？',
+      showCancel: true,
+      success(res) {
+        if (res.confirm) {
+          let infoOpt = {
+            url: '/lovers/wish?id=' + id,
+            type: 'DELETE',
+            data: {
+            },
+            header: {
+              'content-type': 'application/json',
+            },
+          }
+          let infoCb = {}
+          infoCb.success = function (res) {
+            console.log(res);
+          }
+          infoCb.beforeSend = () => { }
+          sendAjax(infoOpt, infoCb, () => { });
+          wx.navigateBack({
+          })
+        }
+      }
+    })
+
   },
   onReady: function () { },
   onShow: function () {

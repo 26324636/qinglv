@@ -12,7 +12,7 @@
         <view class='iconfont icon-tianjiazhaopian'></view>
         <view class='addPicNoPic-text'>添加图片</view>
       </view>
-      <view class='imgList' wx:for="{{imgUrls}}" wx:key="key"> 
+      <view class='imgList' wx:for="{{imgUrls}}" wx:key="key">
         <image class='publishImg' src='{{item}}' mode='aspectFill'></image>
         <view class='imgDel' data-index='{{index}}' catchtap='removePic'>x</view>
       </view>
@@ -21,11 +21,15 @@
   <view class='addContent'>
     <textarea class='content-content' placeholder-class='input_content' placeholder='请描述你们的美好时刻~' bindinput='input_content'></textarea>
   </view>
-  <view class='barBottom' bindtap='{{canPublish == 1 ? "publishBtn" :""}}'>记录
+  <view class='btn'>
+    <view class='deleteBtn' bindtap='delete'>删除</view>
+    <view class='barBottom' bindtap='{{canPublish == 1 ? "publishBtn" :""}}'>记录</view>
   </view>
+  <!-- <view class='barBottom' bindtap='{{canPublish == 1 ? "publishBtn" :""}}'>记录
+  </view> -->
 </view>
 <view>
-    <loading hidden="{{lodingHidden}}">
-        加载中..
-    </loading>
+  <loading hidden="{{lodingHidden}}">
+    加载中..
+  </loading>
 </view>

@@ -1,7 +1,7 @@
 <view class='start_box'>
 <view wx:if="{{canIUse}}" >
     <view class='header'>
-        <image src='https://www.sxscott.com/crazyBirdimg/test/LOGO.png'></image>
+        <image src='http://www.zjw77.club/someimg/qinglvLogo.jpg'></image>
         <view>情侣空间</view>
     </view>
     <view class='content'>

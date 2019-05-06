@@ -3,7 +3,7 @@ const sendAjax = require('../../../utils/sendAjax.js')
 const login = require('../../../utils/wxlogin.js')
 Page({
   data: {
-    detail:''
+    detail:'' //纪念日详情
   },
   onLoad: function (options) {
     console.log(options)
@@ -13,11 +13,41 @@ Page({
       detail:mes
     })
   },
+  //跳转纪念日编辑
   edit:function(){
     var detail = this.data.detail;
     wx.navigateTo({
       url: '../markdayEdit/markdayEdit?detail=' + JSON.stringify(detail),
     })
+  },
+  delete: function () {
+    var id = this.data.detail.id;
+    wx.showModal({
+      title: '确认删除？',
+      showCancel: true,
+      success(res) {
+        if (res.confirm) {
+          let infoOpt = {
+            url: '/lovers/loversDate/delete?id=' + id,
+            type: 'DELETE',
+            data: {
+            },
+            header: {
+              'content-type': 'application/json',
+            },
+          }
+          let infoCb = {}
+          infoCb.success = function (res) {
+            console.log(res);
+          }
+          infoCb.beforeSend = () => { }
+          sendAjax(infoOpt, infoCb, () => { });
+          wx.navigateBack({
+          })
+        }
+      }
+    })
+
   },
   onShow: function (options) {
   },

@@ -10,6 +10,10 @@
       <view class='iconfont icon-bianji'></view>
       <view class='edit-text'>编辑</view>
     </view>
+    <view class='delete' bindtap='delete'>
+      <view class='iconfont icon-shanchu'></view>
+      <view class='delete-text'>删除</view>
+    </view>
     <button class='bottomBar-share' open-type="share" style='background-color: #ffb5c5;'>
       <view class='share'>
         <view class='iconfont icon-fenxiang'></view>

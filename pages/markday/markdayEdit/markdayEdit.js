@@ -3,15 +3,19 @@ const sendAjax = require('../../../utils/sendAjax.js')
 const login = require('../../../utils/wxlogin.js')
 Page({
   data: {
-    detail:''
+    detail:'' //纪念日详情
   },
-  onLoad: function (options) {
+
+  onLoad: function (options) { 
+    //获取上一个页面传过来的纪念日的参数
     var detail = JSON.parse(options.detail);
     console.log(detail)
     this.setData({
       detail: detail
     })
   },
+
+  //监听日期更换赋值
   bindDateChange(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     var detail = this.data.detail;
@@ -20,6 +24,7 @@ Page({
       detail: detail
     })
   },
+  //保存纪念日的
   save:function(){
     var content = this.data.detail.content;
     var id = this.data.detail.id;

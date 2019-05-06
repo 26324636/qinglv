@@ -67,11 +67,23 @@ textarea{
   top: 0;
   color: #aaaeb9;
 }
-.saveBtn{
+.btn{
+  width: 100%;
+  display: flex;
   position: fixed;
   bottom: 0;
   height: 80rpx;
-  width: 100%;
+}
+.deleteBtn{
+  flex: 1;
+  background: #8a8a8a;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.saveBtn{
+  width: 50%;
   background: #ef696c;
   color: #fff;
   font-size: 30rpx;

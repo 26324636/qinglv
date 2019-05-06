@@ -298,16 +298,26 @@ page {
   color: #ef696c;
   border: 1rpx solid #ef696c;
 }
-
-.barBottom{
-  height: 90rpx;
-  line-height: 90rpx;
+.btn{
+  width: 100%;
+  display: flex;
   position: fixed;
   bottom: 0;
-  width: 100%;
-  background: #ef696c;
-  text-align: center;
-  z-index: 999;
+  height: 80rpx;
+}
+.deleteBtn{
+  flex: 1;
+  background: #8a8a8a;
   color: #fff;
-  font-size: 28rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.barBottom{
+  flex: 1;
+  background: #ef696c;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: center;
 }

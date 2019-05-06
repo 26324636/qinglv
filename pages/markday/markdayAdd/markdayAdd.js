@@ -4,7 +4,7 @@ const login = require('../../../utils/wxlogin.js')
 Page({
   data: {
     userInfo: null, //用户信息
-    title:'',
+    title:'', //纪念日标题
     date: '点击选择纪念日时间'
   },
   onLoad: function (options) {
@@ -15,6 +15,7 @@ Page({
   },
   onShow: function (options) {
   },
+  //添加纪念日
   add:function(){
     var that = this;
     var title = this.data.title;
@@ -66,12 +67,14 @@ Page({
     }
     
   },
+  //监听输入的纪念日标题
   title_input:function(e){
     var title = e.detail.value;
     this.setData({
       title: title
     })
   },
+  //监听时间切换
   bindDateChange(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({

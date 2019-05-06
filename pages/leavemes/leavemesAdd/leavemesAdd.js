@@ -3,8 +3,8 @@ const login = require('../../../utils/wxlogin.js')
 Page({
   data: {
     userInfo: null, //用户信息
-    content:'',
-    phoneHeight: 0
+    content:'', //留言的内容 
+    phoneHeight: 0 //当前系统手机高度
   },
   onLoad: function (options) {
     var userInfo = wx.getStorageSync('userinfo');
@@ -15,6 +15,7 @@ Page({
   },
   onShow: function (options) {
   },
+  //发布留意
   publish: function(){
     console.log(1111)
     var that = this;
@@ -70,6 +71,7 @@ Page({
       content: content
     })
   },
+  //获取手机的高度
   getPhoneInfo: function () {
     this.setData({
       phoneHeight: 750 / wx.getSystemInfoSync().windowWidth * wx.getSystemInfoSync().windowHeight

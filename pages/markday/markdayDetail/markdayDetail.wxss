@@ -1,16 +1,10 @@
-@font-face {
-  font-family: "iconfont";
-  src: url('iconfont.eot?t=1556509345037'); /* IE9 */
-  src: url('iconfont.eot?t=1556509345037#iefix') format('embedded-opentype'),
-         /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOQAAsAAAAAB7AAAANBAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDFIJ8ATYCJAMMCwgABCAFhG0HOxvHBsgekiQBChSEIDwOON4gHuDXfX/u3HmzANIHlWCHtvt/NJPZELpDovIbstNL7S1XgBOg8ZHcf8DLFdAGafVOTe3Oue5akN/9Ps/l9Cb44TW+ZbmMNWmMwUe9AEsDCnQPbJMVSEDeMHblRZwnoFi7AIIpqdnFwETKmBYQtkt5Bpik3NKa5qBQkJWsTYUjcgqTvckZDvvfD18NCoUkcpExd/bGFDGI/+DyYVjcnd9tuUvQjBcE20REH0BKWFkaXkw/zPWhr1gxG9RXZ1JBMlYyn8dXq9ZspX+8hJAxGktBD2hKTkpjywh8GKaCFue/iQyF2I2nkK1ti3JNpT2KSo2ybE1P6cODxTWXPT5yvSX391xT8d2dscZRppRFD3v7sGTfjsvCcUFz/aJV895Xe272XdldN39sz+vxXevF66HP/BdMHvZe0hPXLZSvey4YHHXY3DPUPGxuvf9k04AZG9OWdCltvldVWWnxxOr/1BUlHoWujY2uhR4le5bCU0SKZP8Sj72SdsNX2+8ZvHxO75kKV+no4wNK/7ScHdrO/Kys964yBnrJwe/2ql3J5X3+5a/xE4TC/O+Q+0cLuvxNr5ghsHfv/aV+Pc8+1xpPjfddOSl6Xv/cNAa7qW1qpqF78TY0L8GDw6tG/et4M5fxLzSAvHgaZ/mFxcOY/tt+4/7hSp6yHvO/sCQF778dn4XRvBS09yq8qUjgJ2ladqSqDbakstpW68VoBsNXoIRKbvFrWqHac39rXetGgkJ1MRIF2hAV6kKmbB/klBiCTKHxKNZb2uYSNTB9IS1CL+0AQaVtJMq9QFTpnEzZJ+TU+0CmMkQUWxhq9izRLWwxm4wRQ5AYstVQKlKrOMtHzILmQsSXKxic1Pl8KcI6aRKG9huQLaYhFcJjLNBV8GGEcJDDaiVMBZchhUINNVgtQyISJCFEExfcf2PZm4JEaiUwMxmGMAhEDGJVg6RE1FQ4tzdhlvt8IYRXToGBawQV+VIIpiMdHgoVJKQFmWZWtRJcyzU6FXhhCIIDcTA1JSgVBBGFmVODNOWjZBARIoikR0YjTjDqxrU1B81vVT7fAShmHBJDEmJIFW5Eqiopo+KN1rpRmRQAAAAA') format('woff2'),
-         url('iconfont.woff?t=1556509345037') format('woff'),
-         url('iconfont.ttf?t=1556509345037') format('truetype'),
-         /* chrome,
-         firefox,
-         opera,
-         Safari,
-         Android,
-         iOS 4.2+ */ url('iconfont.svg?t=1556509345037#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1557132529475'); /* IE9 */
+  src: url('iconfont.eot?t=1557132529475#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARgAAsAAAAACMAAAAQRAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqEfIQuATYCJAMQCwoABCAFhG0HRRudBxEVnPPIvsC2YQ+hVAmVJKi0wB3bmf3OYx4kkEABAAAAAMETrON7szMLHUBXMMoNVgTUPtuJ//+4937BCYrSQHY4bq9OSIAjVcLalpZ2BhtwpBkH5jHMH621N2sfyoR0Fr+KJ4d4Mmvns4Noo2VKoRIiIZKVtb//czm9+fzssPXtLJdrjE1jTI16AZYGFNDe2PbAB0iC3jB2cRnHIUBEGWohnbqk5UGAoY0TQGZNb6yGIGbBSigh0Hs5Sw1kPRAInCHsA8A69/uSi0PIgIOroE3tNyVSB+0yimWmOvA/QJmNgLQ/F8CsAgVqAQYyLdczAfXjtVAiKdtoAgT6Ow5kFMtokpn+/49ka9EE6C8PBAcF8UDTJIhslFDIKGYyEMhowsCBzNSCQtxGB0AK3AIkPzCU6qfCxS2emEO61o2o8KkMRvXKghcvDHr50Jcv6VWDnz+nlw169ky1wBLFRFk3e/HifuWxuGAaMygsXKGh9+VPVj5ioHDe1Klx/1mpbY8bX6iZP3uBnumBE4e0rhnyRyf5TcNjg+M0FhodGKHWhDgDL8BpVR1DC/JmVrqjoUXDvCRauTywYqDhP55f0pcvr26M1uZXa869lo7m3+cn53dVBAZ+dqZh5bIYO7mC1jC4qVVaBJVN+XN0vn6AZmm/ZoB+8KnBOmzARlsP1l/OqXTfZ53Af2V3TuisLbIU4Q6TTyUnt24lv8OwzS2sVlehN352lUJjGjJ/f/O7rV9V9v+87VuDK/055O0trFjxuWcN1lDrwNK7/sqFu/C68DL0YUvlCaqpgpaFdahZhLd15m/x5fP57u5/A5qdvnilvabUZWB6y9RJuF7PCx6uulIunaupapPLYM4ogGxgzNc75wZF0abiZXb3zcr1U2elyeryxfM+Fij2sWZm/pmEotZaYaagGNZujlDlZ+J7Mw+A/+m99nW56wUunqQnuPZf4ze8fP9zG8tq9XVAwwPAq2+Ff6D3P4N6Wt6vtLb0R5DWrDNZrlnNRIUpUQqN3rhwX01Euh1efxoK8KEPXeHaxSAEFA7Bwac0KAGVUCNrgUtMI/AIaAsRNc2sV8cUhGgjFgI1+AIg5OMbHPJwA5R8/KJG/oFLEf7BI5+0IWKITLeMqSJ6NCcMGROIXkDHZSEMO4+80iPKhyykqNzlXJGsDoHveMnUGgukPmbYRxkwCxBU5rACp2GWlVBRaTBmRzFXM9cVeU9y4jJvjOgIgYQwSAIQ8QKgiSkpEHZzZpT6/BFE8kBGCJXUlISvIIRFdw74OHg10LWmqFVzLudYHpEEMIwAEBAlOcAKuJBMj5cAVf4gAxLDOKgW0YoZLmok6mqc8XX5FW4DIrTdTBxRMXEJpmDxrMNC9iI7YnTfKhqL1UOjAQAAAA==') format('woff2'),
+  url('iconfont.woff?t=1557132529475') format('woff'),
+  url('iconfont.ttf?t=1557132529475') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1557132529475#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -28,6 +22,12 @@
 .icon-bianji:before {
   content: "\e636";
 }
+
+.icon-shanchu:before {
+  content: "\e70d";
+}
+
+
 
 page {
   background: linear-gradient(to bottom, #ff82ab, #ffb5c5);
@@ -75,7 +75,7 @@ page {
 }
 
 .edit {
-  width: 50%;
+flex: 1;
   display: flex;
   color: #fff;
   justify-content: center;
@@ -88,6 +88,24 @@ page {
 }
 
 .edit-text {
+  font-size: 35rpx;
+  margin-left: 10rpx;
+    line-height: 50rpx;
+}
+.delete {
+  flex: 1;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  height: 50rpx;
+}
+
+.icon-shanchu {
+  font-size: 35rpx;
+  line-height: 50rpx;
+}
+
+.delete-text {
   font-size: 35rpx;
   margin-left: 10rpx;
     line-height: 50rpx;
@@ -112,7 +130,7 @@ page {
       line-height: 50rpx;
 }
 .bottomBar-share {
-  width: 25%;
-  margin-left: 5%;
+flex: 1;
+  /* margin-left: 5%; */
 }
 button::after{ border: none; } 

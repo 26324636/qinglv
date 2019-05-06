@@ -55,7 +55,7 @@ page{
     border-radius: 80rpx;
     font-size: 34rpx;
     color: white;
-    background: #37b5f8;
+    background: #ef696c;
 }
 image.getPhone_img{
   position: fixed;

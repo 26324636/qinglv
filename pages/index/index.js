@@ -15,15 +15,7 @@ Page({
     input_bindid: '' //输入的绑定ID
   },
   onLoad: function (options) {
-    var that = this;
-    login.wxLogin(0, function (res) { //调用登录接口
-      that.setData({
-        userInfo: res,
-      })
-      if (that.data.userInfo.isbound == 1) { //如果已经绑定了，就获取双方的信息
-        that.getLoversInfo();
-      }
-    });
+   
   },
   //获得情侣信息的接口
   getLoversInfo:function(){
@@ -283,7 +275,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this;
+    login.wxLogin(0, function (res) { //调用登录接口
+      that.setData({
+        userInfo: res,
+      })
+      if (that.data.userInfo.isbound == 1) { //如果已经绑定了，就获取双方的信息
+        that.getLoversInfo();
+      }
+    });
   },
 
   /**

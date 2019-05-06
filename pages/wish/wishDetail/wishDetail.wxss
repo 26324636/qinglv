@@ -420,3 +420,9 @@ button::after{ border: none; }
   font-size: 25rpx;
   line-height: 50rpx;
 }
+.delete{
+  font-size: 28rpx;
+  color: #8a8a8a;
+  position: absolute;
+  right: 5%;
+}

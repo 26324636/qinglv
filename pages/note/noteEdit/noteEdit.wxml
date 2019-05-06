@@ -22,5 +22,7 @@
 </view>
 <textarea style='height:{{phoneHeight}}rpx' placeholder="请输入备忘内容"  bindinput='input_content' value='{{content}}'>
 </textarea>
-
-  <view  class='saveBtn' bindtap='save'>保存</view>
+<view class='btn'>
+  <view class='deleteBtn' bindtap='delete'>删除</view>
+  <view class='saveBtn' bindtap='save'>保存</view>
+</view>

@@ -4,18 +4,18 @@ const login = require('../../utils/wxlogin.js')
 Page({
   data: {
     userInfo: null, //用户信息
-    list: null
+    list: null //留言列表
   },
   onLoad: function (options) {
+  },
+  onShow: function (options) {
     var userInfo = wx.getStorageSync('userinfo');
     this.setData({
       userInfo: userInfo
     })
-
-  },
-  onShow: function (options) {
     this.getLeaveMes();
   },
+  //获取留言信息
   getLeaveMes:function(){
     var that = this;
     var loversId = this.data.userInfo.loversId;
@@ -39,6 +39,7 @@ Page({
     infoCb.beforeSend = () => { }
     sendAjax(infoOpt, infoCb, () => { });
   },
+  //跳转留言
   toAdd:function(){
     var isbound = wx.getStorageSync('userinfo').isbound;
     if(isbound == 1){
@@ -53,11 +54,13 @@ Page({
     }
 
   },
-  // toDetail:function(){
-  //   wx.navigateTo({
-  //     url: 'leavemesDetail/leavemesDetail',
-  //   })
-  // },
+  toDetail:function(e){
+    console.log(e)
+    var mes = JSON.stringify(e.currentTarget.dataset.mes);
+    wx.navigateTo({
+      url: 'leavemesDetail/leavemesDetail?mes=' + mes,
+    })
+  },
   onReady: function () {
   },
 

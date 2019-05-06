@@ -4,17 +4,18 @@ const login = require('../../utils/wxlogin.js')
 Page({
   data: {
     userInfo: null, //用户信息
-    list: []
+    list: [] //纪念日列表
   },
   onLoad: function(options) {
+  },
+  onShow: function(options) {
     var userInfo = wx.getStorageSync('userinfo');
     this.setData({
       userInfo: userInfo
     })
-  },
-  onShow: function(options) {
     this.getMarkDay();
   },
+  //获取纪念日列表
   getMarkDay: function() {
     var that = this;
     var loversId = this.data.userInfo.loversId;
@@ -42,6 +43,7 @@ Page({
     infoCb.beforeSend = () => {}
     sendAjax(infoOpt, infoCb, () => {});
   },
+  //跳转增加
   toAdd: function() {
     var isbound = wx.getStorageSync('userinfo').isbound;
     if (isbound == 1) {
@@ -55,6 +57,7 @@ Page({
       })
     }
   },
+  //跳转详情
   toDetail: function(e) {
 
     var mes = e.currentTarget.dataset.mes;
