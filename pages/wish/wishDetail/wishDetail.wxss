@@ -362,13 +362,6 @@
   line-height: 40rpx;
 }
 
-.bottomBar-share {
-  width: 20%;
-  margin-left: 5%;
-  color: #959595;
-
-  background-color:#fff;
-}
 button::after{ border: none; } 
 .icon-fenxiang {
   font-size: 45rpx;
@@ -425,4 +418,17 @@ button::after{ border: none; }
   color: #8a8a8a;
   position: absolute;
   right: 5%;
+}
+button{
+  padding: 0;
+}
+.fenxiang-text{
+  position: fixed;
+  bottom: 0;
+  background: #ef696c;
+  width: 100%;
+  color: #fff;
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
 }

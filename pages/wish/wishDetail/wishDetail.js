@@ -103,10 +103,10 @@ Page({
   },
   onShareAppMessage: function () {
     var id = this.data.id;
-    var name = this.data.goodsDetail.goodsTitle;
+    var title = this.data.detail.title;
     return {
-      title: '推荐给您 ' + name,
-      path: 'pages/secondHand/secondHandDetail/secondHandDetail?id=' + id,
+      title: '我的愿望清单 ' + title,
+      path: 'pages/wish/wishDetail/wishDetail?id=' + id,
     };
   }
 })

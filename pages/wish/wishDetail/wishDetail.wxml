@@ -11,8 +11,10 @@
     <text>{{detail.content}}</text>
   </view>
   <view class='goodsImg'>
-    <image wx:for="{{detail.url}}"  class='goodsImg-img' src='{{item}}' data-img='{{item}}' catchtap='imgYu' mode='aspectFill' wx:key="key"></image>
+    <image wx:for="{{detail.url}}" class='goodsImg-img' src='{{item}}' data-img='{{item}}' catchtap='imgYu' mode='aspectFill' wx:key="key"></image>
   </view>
- 
- 
+  <button class='bottomBar-share' open-type="share" style='background-color: #ffb5c5;'>
+    <view class='fenxiang-text'>分享</view>
+  </button>
+
 </view>
