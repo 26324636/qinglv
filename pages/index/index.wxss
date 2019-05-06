@@ -250,9 +250,23 @@ page {
   display: flex;
   justify-content: space-around;
 }
-
-.yuanwang {
+form{
   width: 23%;
+}
+button{
+  padding: 0;
+  line-height:100rpx;
+border-radius:20rpx;
+
+}
+button::after{
+  border:none;
+}
+.goods-list button.button-hover {
+  background-color: #fff;
+}
+.yuanwang {
+  width: 100%;
   height: 200rpx;
   background-image: linear-gradient(135deg, #fff6b7 10%, #f6416c 100%);
   border-radius: 20rpx;
@@ -262,19 +276,20 @@ page {
   color: #fff;
   text-align: center;
   font-size: 80rpx;
-  margin-top: 30rpx;
+  padding-top: 30rpx;
+  /* margin-top: 30rpx; */
 }
 
 .yuanwang-text {
   font-size: 25rpx;
   text-align: center;
   color: #fff;
-  margin-top: 20rpx;
+  margin-top: -20rpx;
   font-weight: bold;
 }
 
 .tianqi {
-  width: 23%;
+  width: 100%;
   height: 200rpx;
   background-image: linear-gradient(135deg, #f072b6 10%, #fff886 100%);
   border-radius: 20rpx;
@@ -284,19 +299,19 @@ page {
   color: #fff;
   text-align: center;
   font-size: 80rpx;
-  margin-top: 30rpx;
+  padding-top: 30rpx;
 }
 
 .tianqi-text {
   font-size: 25rpx;
   text-align: center;
   color: #fff;
-  margin-top: 20rpx;
+  margin-top: -20rpx;
   font-weight: bold;
 }
 
 .dianying {
-  width: 23%;
+  width: 100%;
   height: 200rpx;
   background-image: linear-gradient(135deg, #81ffef 10%, #f067b4 100%);
   border-radius: 20rpx;
@@ -306,19 +321,19 @@ page {
   color: #fff;
   text-align: center;
   font-size: 80rpx;
-  margin-top: 30rpx;
+  padding-top: 30rpx;
 }
 
 .dianying-text {
   font-size: 25rpx;
   text-align: center;
   color: #fff;
-  margin-top: 20rpx;
+  margin-top: -20rpx;
   font-weight: bold;
 }
 
 .youxi {
-  width: 23%;
+  width: 100%;
   height: 200rpx;
   background-image: linear-gradient(135deg, #eead92 10%, #6018dc 100%);
   border-radius: 20rpx;
@@ -328,14 +343,14 @@ page {
   color: #fff;
   text-align: center;
   font-size: 80rpx;
-  margin-top: 30rpx;
+  padding-top: 30rpx;
 }
 
 .youxi-text {
   font-size: 25rpx;
   text-align: center;
   color: #fff;
-  margin-top: 20rpx;
+  margin-top: -20rpx;
   font-weight: bold;
 }
 .input-bindid{

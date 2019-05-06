@@ -264,6 +264,34 @@ Page({
       })
     }
   },
+  //收集formId
+  getFormId: function (e) {
+    var formId = e.detail.formId;
+    var userId = wx.getStorageSync('userinfo').userId;
+    var openId = wx.getStorageSync('userinfo').openId;
+    console.log(formId)
+    if (formId != 'the formId is a mock one') {
+      var that = this;
+      let infoOpt = {
+        url: '/lovers/insertForm',
+        type: 'POST',
+        data: {
+          userId: userId,
+          openId: openId,
+          formId: formId
+        },
+        header: {
+          'content-type': 'application/json',
+        },
+      }
+      let infoCb = {}
+      infoCb.success = function (res) {
+      }
+      infoCb.beforeSend = () => { }
+      sendAjax(infoOpt, infoCb, () => { });
+    }
+
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

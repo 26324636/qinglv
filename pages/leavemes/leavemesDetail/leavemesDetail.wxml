@@ -7,7 +7,7 @@
       <view class='top-info'>
         <view class='list-name'>{{mes.nickName}}</view>
         <view class='list-time'>{{mes.gmtCreated}}</view>
-        <view class='delete'>删除</view>
+        <view class='delete' bindtap='delete'>删除</view>
       </view>
     </view>
     <view class='list-cont'>

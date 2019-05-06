@@ -2,14 +2,23 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success: (res) => {
+        if (res.code) {
+          wx.request({
+            url: "https://api.weixin.qq.com/sns/jscode2session",
+            data: {
+              appid: 'wx2182929c9a623dcd', //你的appid
+              secret: '4122dac9c89fd205684cdc7f04cb5ee2', //你的secret
+              js_code: res.code,
+              grant_type: "authorization_code"
+            },
+            success: (res) => {
+              console.log(res);
+              wx.setStorageSync('oppenid', res.data.openid)
+            }
+          })
+        }
       }
     })
     // 获取用户信息

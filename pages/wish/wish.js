@@ -122,9 +122,10 @@ Page({
     })
   },
   //跳转完成的清单详情
-  toDetail: function () {
+  toDetail: function (e) {
+    var id = e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: 'wishDetail/wishDetail',
+      url: 'wishDetail/wishDetail?id=' + id,
     })
   },
   onReady: function () {
